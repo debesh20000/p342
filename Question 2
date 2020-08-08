@@ -1,0 +1,18 @@
+#include<stdio.h>  
+int main()    
+{    
+ double i,fact=1,n;    
+ printf("Enter a number: ");    
+  scanf("%lf",&n);    
+  if (n<0){
+      printf("enter a number greater than 0");
+  }
+  else{
+    for(i=1;i<=n;i++){    
+      fact=fact*i;    
+     }    
+  printf("Factorial of %lf is: %lf",n,fact);         
+  }
+ 
+return 0;  
+}   
