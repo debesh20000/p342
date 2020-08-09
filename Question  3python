@@ -1,8 +1,16 @@
 sum=0
 i = 1
+term = 0
+preterm = 0
+diff = 6
  
-while 1/i >= 0.001:
-	sum = sum + 1/i
-	i = i + 1
- 
-print("The sum of series is ", sum)
+while ( diff> 0.001):
+    term = 1/i
+    preterm = sum 
+    sum = sum + term
+    diff = sum - preterm
+    i = i + 1
+
+if (diff < 0.001):
+    print("The term where difference is less than 0.001 is ", diff)
+    print("The sum of series is ", sum)
